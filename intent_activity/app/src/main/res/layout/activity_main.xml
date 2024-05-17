@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnOpenAct2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Activity 2"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnOpenDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Dialog"
+        android:backgroundTint="#009688"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnSub1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open SubActivity #1\n(sending Data)"
+        android:backgroundTint="#DF1324"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter number"
+        android:textSize="26sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnSub2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open SubActivity #2\n(sending and receiving DATA )"
+        android:backgroundTint="#DFB313"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="26sp"
+        android:gravity="center"/>
+</LinearLayout>

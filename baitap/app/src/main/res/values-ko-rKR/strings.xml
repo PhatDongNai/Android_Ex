@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email">Mole:</string>
+    <string name="type_your_email_address">kkk</string>
+    <string name="password">Password:</string>
+    <string name="type_your_password">tttt</string>
+    <string name="login">LOGIN</string>
+</resources>

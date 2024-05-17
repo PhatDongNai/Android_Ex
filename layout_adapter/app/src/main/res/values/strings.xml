@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">layout_adapter</string>
+
+    <string-array name="foodList">
+        <item>Bún riêu</item>
+        <item>Bún thịt nướng</item>
+        <item>Bún Bò Huế</item>
+        <item>Bún Thang</item>
+        <item>Bún xào</item>
+        <item>Bún Thái</item>
+        <item>Bún giò</item>
+        <item>Bún mắm</item>
+        <item>Bún măng vịt</item>
+        <item>Bún ốc</item>
+        <item>Bún hải sản</item>
+    </string-array>
+</resources>

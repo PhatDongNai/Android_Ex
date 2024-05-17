@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">baitap</string>
+
+    <string name="email">Email:</string>
+    <string name="type_your_email_address">Type your Email Address</string>
+    <string name="password">Password:</string>
+    <string name="type_your_password">Type your Password</string>
+    <string name="login">LOGIN</string>
+</resources>

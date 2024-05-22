@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     Random random = new Random();
 
+    int count = 0;
+
+    LinearLayout currentRow;
     //Main/UI - Thread
     Handler handler = new Handler(new Handler.Callback() {
         @Override
@@ -59,10 +63,47 @@ public class MainActivity extends AppCompatActivity {
 
             if(randNumb % 2 == 0){
                 button.setBackgroundColor(Color.rgb(255,0,255));
-            }else
-                button.setBackgroundColor(Color.rgb(255,87,34));
-            binding.containerLayout.addView(button);
+            }else {
+                button.setBackgroundColor(Color.rgb(255, 87, 34));
+            }
 
+//            if (count % 2 == 0) {
+//                params.gravity = Gravity.START;
+//            } else {
+//                params.gravity = Gravity.END;
+//            }
+//            count ++;
+
+//            binding.containerLayout.addView(button);
+
+            if (count % 2 == 0) {
+                // Create a new row for every two buttons
+                currentRow = new LinearLayout(MainActivity.this);
+                currentRow.setLayoutParams(new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT));
+                currentRow.setOrientation(LinearLayout.HORIZONTAL);
+                binding.containerLayout.addView(currentRow);
+            }
+            // Set layout params with alternating weights and widths
+            if ((count / 2) % 2 == 0) { // Even rows (0, 2, 4, ...)
+                if (count % 2 == 0) {
+                    params = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 3);
+                } else {
+                    params = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 7);
+                }
+            } else { // Odd rows (1, 3, 5, ...)
+                if (count % 2 == 0) {
+                    params = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 7);
+                } else {
+                    params = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 3);
+                }
+            }
+            params.setMargins(15, 15, 15, 15);
+            button.setLayoutParams(params);
+
+            currentRow.addView(button);
+            count++;
             if(percent == 100)
                 binding.txtPercent.setText("Done");
 

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
+import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             //ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(new ViewGroup.LayoutParams(200, ViewGroup.LayoutParams.WRAP_CONTENT));
 
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(200,ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.setMargins(15, 15, 15 ,15);
+//            params.setMargins(15, 15, 15 ,15);
 //            ImageView imv = new ImageView(MainActivity.this);
 //            imv.setLayoutParams(params);
 //
@@ -67,15 +68,27 @@ public class MainActivity extends AppCompatActivity {
                 button.setBackgroundColor(Color.rgb(255, 87, 34));
             }
 
+            //Câu 1
+//            DisplayMetrics displayMetrics = new DisplayMetrics();
+//            getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+//            int screenWidth = displayMetrics.widthPixels;
+//
+//            int halfScreenWidth = screenWidth / 2;
+//
+//            params.setMargins(15,15,15,15);
+//
 //            if (count % 2 == 0) {
+//                params.width =  halfScreenWidth - 40;
 //                params.gravity = Gravity.START;
 //            } else {
+//                params.width =  halfScreenWidth - 40;
 //                params.gravity = Gravity.END;
 //            }
 //            count ++;
-
 //            binding.containerLayout.addView(button);
 
+
+            //Câu 2
             if (count % 2 == 0) {
                 // Create a new row for every two buttons
                 currentRow = new LinearLayout(MainActivity.this);

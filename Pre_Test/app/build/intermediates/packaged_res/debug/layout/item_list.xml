@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imvPhoto"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="3"
+            android:src="@drawable/lunch_com_tam_dai_dong" />
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cơm Tấm Đại Đồng"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_columnSpan="2"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Món Chính"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="#03A9F4"
+                android:padding="10dp"
+                android:layout_marginEnd ="5dp"/>
+            <TextView
+                android:id="@+id/txtDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô Tả"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="#03a9f4"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:padding="10dp" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_edit_24"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="#03a9f4"
+                android:padding="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_auto_delete_24"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="#03a9f4"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25000đ"
+                android:textSize="20sp"
+                android:layout_columnSpan="2"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginTop="50dp"/>
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

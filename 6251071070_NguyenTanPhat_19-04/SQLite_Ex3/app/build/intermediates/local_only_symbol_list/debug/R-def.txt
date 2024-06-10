@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable baseline_add_to_photo
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnCancel
+id btnCapture
+id btnSave
+id edtDesCription
+id edtName
+id imvPhoto
+id lvWarranty
+id txtDescription
+id txtName
+layout activity_main
+layout activity_main2
+layout item_list
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.SQLite_Ex3
+style Theme.SQLite_Ex3
+xml backup_rules
+xml data_extraction_rules

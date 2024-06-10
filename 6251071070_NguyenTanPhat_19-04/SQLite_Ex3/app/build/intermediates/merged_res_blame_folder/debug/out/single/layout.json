@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.nguyentanphat.sqlite_ex3.app-mergeDebugResources-30:/layout/activity_main2.xml",
+        "source": "com.nguyentanphat.sqlite_ex3.app-main-33:/layout/activity_main2.xml"
+    },
+    {
+        "merged": "com.nguyentanphat.sqlite_ex3.app-mergeDebugResources-30:/layout/item_list.xml",
+        "source": "com.nguyentanphat.sqlite_ex3.app-main-33:/layout/item_list.xml"
+    },
+    {
+        "merged": "com.nguyentanphat.sqlite_ex3.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.nguyentanphat.sqlite_ex3.app-main-33:/layout/activity_main.xml"
+    }
+]
